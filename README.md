@@ -1,6 +1,7 @@
 # tejportfolio.com
 v2.0 of Yuvateja's Portfolio
 # Tej Portfolio
+yuvatej28.github.io/tejportfolio.com/
 
 Welcome to my portfolio! This repository contains information about me and how to get in touch.
 
