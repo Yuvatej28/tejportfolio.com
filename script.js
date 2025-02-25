@@ -70,7 +70,7 @@ const posts = [
 	title: "Movie Informations - Trending movies and every movies ever",
 	intro: "See any of your movies you want!!",
 	image: "images/movie1.jpg",
-	link: "post5.html"
+	link: "post6.html"
 }
 ];
 
