@@ -8,13 +8,28 @@
   </head>
   <body>
     <h1>todos</h1>
-    <form id="form">
-      <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
 
-      <ul class="todos" id="todos"></ul>
-    </form>
-    <small>Left click to toggle completed. <br> Right click to delete todo</small>
+    <!-- Login (shown when logged out) -->
+    <div id="auth" class="auth" hidden>
+      <input type="email" id="email" placeholder="Email" autocomplete="email" />
+      <input type="password" id="password" placeholder="Password (6+ characters)" autocomplete="current-password" />
+      <div class="auth-buttons">
+        <button id="login-btn" type="button">Log in</button>
+        <button id="signup-btn" type="button">Sign up</button>
+      </div>
+      <p id="auth-error" class="auth-error"></p>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Todo app (shown when logged in) -->
+    <div id="app" hidden>
+      <form id="form">
+        <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
+        <ul class="todos" id="todos"></ul>
+      </form>
+      <small>Left click to toggle completed. <br> Right click to delete todo</small>
+      <button id="logout-btn" type="button" class="logout">Log out</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
   </body>
 </html>
