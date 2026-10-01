@@ -70,3 +70,50 @@ small {
   margin-top: 3rem;
   text-align: center;
 }
+.auth {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 400px;
+  max-width: 100%;
+}
+
+.auth input {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  padding: 0.8rem 1.2rem;
+  font-family: inherit;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.auth button, .logout {
+  flex: 1;
+  background: rgb(179, 131, 226);
+  color: #fff;
+  border: none;
+  padding: 0.7rem;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.logout {
+  margin-top: 1rem;
+  flex: none;
+  opacity: 0.8;
+}
+
+.auth-error {
+  color: #d9534f;
+  text-align: center;
+  margin: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
